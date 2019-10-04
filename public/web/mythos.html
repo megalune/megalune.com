@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Mythos | Tim King</title>
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+	<meta property="fb:admins" content="21406197" />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+<body>
+	<a class="accessible" href="#main">[Skip to Content]</a>
+	<div id="container">
+	<div class="wrap">
+		<div id="header">
+			<div id="site-title"><a rel="home" title="TIM KING" href="http://www.megalune.com"><span>TIM KING</span></a></div>
+				<ul class="menu">
+					<li><a href="/web/" id="web">web design</a></li>
+					<li><a href="/graphic-design/" id="graphic-design">graphic design</a></li>
+					<li><a href="/about/" id="about">about me</a></li>
+				</ul>
+		</div>
+		<!-- #header --> 
+		<a id="main"></a>
+				<div id="content">
+			<div class="fixed">
+				<div id="sticker">
+					<h1>Mythos</h1>
+					<p><em>Skills:
+						Photoshop, Flash, and XML</em></p>
+					<p><a href="/files/Mythos/index.html" target="_blank">View Site »</a> </p>
+					<p><a href="mythos.pdf" target="_blank">Read the Capstone Report »</a> </p>
+					<p>This is my capstone project for UC. I wanted to focus on the UI  design by making a database that could be quickly and visually organized  by several different methods and showed the relationship between  various entries. I also wanted to keep everything on one screen, as  opposed to having to navigate various pages or scroll.</p>
+					<p>You can sort by various methods by clicking one of the seven words on  the inner ring near the character&rsquo;s image. Clicking a character&rsquo;s name  will also highlight related characters, such as allies or enemies. </p>
+				</div>
+			</div>
+			<div class="fluid"><img src="images/mythos-1.jpg"><img src="images/mythos-2.jpg"><img src="images/mythos-3.jpg"></div>
+
+		</div>
+		<!-- #container -->
+		
+		<div style="clear:both;"></div>
+
+		<div id="footer">
+			<ul class="menu">
+				<li><a href="/web/" id="web">web design</a></li>
+				<li><a href="/graphic-design/" id="graphic-design">graphic design</a></li>
+				<li><a href="/about/" id="about">about me</a></li>
+			</ul>
+			<p class="copyright">Copyright &#169; <?php echo date("Y"); ?> <a class="site-link" href="http://www.megalune.com" title="Tim King" rel="home"><span>Tim King</span></a></p>
+		</div>
+		<!-- #footer -->
+		
+	</div>
+	<!-- .wrap --> 
+	
+</div>
+<!-- #container -->
+
+	
+	<!-- Add js -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		// stickie
+		$(document).ready(function () {
+			var s = $("#sticker");
+			var pos = s.position();
+			$(window).scroll(function () {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");
+				}
+			});
+		});
+	</script>
+	
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-4102644-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function () {
+	  	var ga = document.createElement('script');
+	  	ga.type = 'text/javascript';
+	  	ga.async = true;
+	  	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  	var s = document.getElementsByTagName('script')[0];
+	  	s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
