@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>MYTHOS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript" language="JavaScript">
+        //<![CDATA[
+          function setFlashWidth(divid, newW){
+          	document.getElementById(divid).style.width = newW+"px";
+          }
+          function setFlashHeight(divid, newH){
+          	document.getElementById(divid).style.height = newH+"px";	
+          }
+          function setFlashSize(divid, newW, newH){
+          	setFlashWidth(divid, newW);
+          	setFlashHeight(divid, newH);
+          }
+          function canResizeFlash(){
+          	var ua = navigator.userAgent.toLowerCase();
+          	var opera = ua.indexOf("opera");
+          	if( document.getElementById ){
+          		if(opera == -1) return true;
+          		else if(parseInt(ua.substr(opera+6, 1)) >= 7) return true;
+          	}
+          	return false;
+          }
+        //]]>
+        </script>
+  </head>
+
+  <body>
+    <div align="center">
+      <div id="flashid" style="width:900px;height:725px;">
+        <script type="text/javascript" language="JavaScript">
+        //<![CDATA[
+          e = canResizeFlash();
+          document.write('<object data="mythos.swf" width="100%" height="100%" type="application/x-shockwave-flash">');
+          document.write('<param name="movie" value="mythos.swf" />');
+          document.write('<param name="FlashVars" value="allowResize='+e+'" />');
+          document.write('Flash Movie With Resizing Content');
+          document.write('<\/object>');
+        //]]>
+        </script><noscript>Javascript must be enabled to view Flash movie</noscript>
+      </div>
+    </div>
+  </body>
+</html>

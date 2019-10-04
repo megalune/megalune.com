@@ -1,0 +1,26 @@
+#Redirect requests to www domain
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+
+
+#Disable Etags
+Header unset ETag
+FileETag None
+
+
+#Add expire headers
+ExpiresActive On
+ExpiresByType text/html "access plus 5 seconds"
+ExpiresByType image/gif "access plus 2 weeks"
+ExpiresByType image/jpeg "access plus 2 weeks"
+ExpiresByType image/png "access plus 2 weeks"
+ExpiresByType text/css "access plus 2 weeks"
+ExpiresByType text/javascript "access plus 2 weeks"
+ExpiresByType application/x-javascript "access plus 2 weeks"
+
+
+#Compress plain text file
+<FilesMatch "\.(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>

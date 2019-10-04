@@ -1,0 +1,13 @@
+url: "/"
+destination: public
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      stricker: false
+
+sass:
+  style: compressed
