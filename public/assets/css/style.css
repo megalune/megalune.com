@@ -4,7 +4,7 @@
 
 
 html { font-size: 1em; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; font: 0.75em/1.75em 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #555; background: #fff; padding: 0; background: url(../images/groovepaper.png); text-align: center; }
+body { margin: 0; font: 0.75em/1.75em 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #555; background: #fff; padding: 0; /*background: url(../images/groovepaper.png);*/ text-align: center; }
 #container { margin: 45px; }
 
 ::-moz-selection {
@@ -42,7 +42,7 @@ a, input[type=submit], span.caption, input[type=button], input[type=text], texta
 #content, .singular-page.page-template-fullwidth #content { min-height: 180px; }
 .singular-page #content { width: 100%; }
 #sidebar-primary { float: right; width: 27.65957446808511%; }
-.wrap { background-color: #fff; border: 4px double #e1e1e1; padding: 20px 30px; }
+.wrap { /*background-color: #fff; border: 4px double #e1e1e1;*/ padding: 20px 30px; }
 /* Header 
 -------------------------------------------------------------- */
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Health Alliance | Tim King</title>
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+	<meta property="fb:admins" content="21406197" />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+<body>
+	<a class="accessible" href="#main">[Skip to Content]</a>
+	<div id="container">
+	<div class="wrap">
+		<div id="header">
+			<div id="site-title"><a rel="home" title="TIM KING" href="http://www.megalune.com"><span>TIM KING</span></a></div>
+				<!-- <ul class="menu">
+					<li><a href="/" id="web">web design</a></li>
+					<li><a href="/graphic-design" id="graphic-design">graphic design</a></li>
+					<li><a href="/about" id="about">about me</a></li>
+				</ul> -->
+		</div>
+		<!-- #header --> 
+		<a id="main"></a>
+				<div id="content">
+			<div class="fixed">
+				<div id="sticker">
+					<h1>Health Alliance</h1>
+					<p><em>Skills:
+						HTML, CSS, Foundation, jQuery, ARIA-WCAG</em></p>
+					<p><a href="http://healthalliance.org/" target="_blank">View Site »</a> </p>
+					<p>I was part of a small team responsible for creating a new design and updating all the content on the company website. The site is fully responsive and ties into an in-house CMS. It displays different content depending on the visitor's location. One of my primary responsibilities was to focus on accessibility for visitors using screen readers. To that end, the site makes use of HTML 5 elements and WAI-ARIA techniques.</p>
+				</div>
+			</div>
+			<div class="fluid"><img src="images/ha-1.jpg"><img src="images/ha-2.jpg"><img src="images/ha-3.jpg"><img src="images/ha-4.jpg"></div>
+
+		</div>
+		<!-- #container -->
+		
+		<div style="clear:both;"></div>
+
+		<div id="footer">
+			<p class="copyright">Copyright &#169; <a class="site-link" href="http://www.megalune.com" title="Tim King" rel="home"><span>Tim King</span></a></p>
+		</div>
+		<!-- #footer -->
+		
+	</div>
+	<!-- .wrap --> 
+	
+</div>
+<!-- #container -->
+
+	
+	<!-- Add js -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		// stickie
+		$(document).ready(function () {
+			var s = $("#sticker");
+			var pos = s.position();
+			$(window).scroll(function () {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");
+				}
+			});
+		});
+	</script>
+	
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-4102644-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function () {
+	  	var ga = document.createElement('script');
+	  	ga.type = 'text/javascript';
+	  	ga.async = true;
+	  	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  	var s = document.getElementsByTagName('script')[0];
+	  	s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GetProz App Wireframe</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionic/1.2.4/css/ionic.min.css">
+<link rel="stylesheet" href="../css/custom-app-for-ionic.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<!-- header --> 
+<!-- TemplateBeginEditable name="header" -->
+<div class="bar bar-header">
+	<button class="button button-icon icon ion-ios-arrow-left"></button>
+	<div class="h1 title">Tues. 12/13</div>
+	<button class="button button-icon icon ion-ios-arrow-right"></button>
+</div>
+<!-- TemplateEndEditable --> 
+
+<!-- content -->
+<main>
+	<div class="content"> 
+		
+		<!-- search --> 
+		<!-- TemplateBeginEditable name="search" -->
+		<div class="bar bar-subheader item-input-inset">
+			<label class="item-input-wrapper"> <i class="icon ion-ios-search placeholder-icon"></i>
+				<input type="search" placeholder="Search">
+			</label>
+			<button class="button button-icon icon ion-ios-more"></button>
+		</div>
+		<!-- TemplateEndEditable --> <!-- TemplateBeginEditable name="screenshot" --> <!-- TemplateEndEditable --> </div>
+</main>
+
+<!-- footer tabs -->
+<div class="tabs tabs-icon-top"> <a href="../app/jobs.html" class="tab-item" id="t0"> <i class="icon ion-ios-calendar"></i> Jobs </a> <a href="../app/bids.html" class="tab-item" id="t2"> <i class="icon ion-ios-pricetags"></i> Bids </a> <a href="../app/qrews.html" class="tab-item" id="t3"> <img src="../images/logo-icon.svg" width="32" height="32"><br>
+	Qrews </a> <a href="../app/more.html" class="tab-item" id="t4"> <i class="icon ion-ios-more"></i> More </a> </div>
+<!-- TemplateBeginEditable name="subnav" --> <!-- TemplateEndEditable --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<script src="../js/common.js"></script> 
+<!-- TemplateBeginEditable name="foot" --> <!-- TemplateEndEditable -->
+</body>
+</html>

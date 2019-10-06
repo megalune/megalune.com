@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+html, body, #map_canvas {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+</style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
+    <script>
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 2,
+    center: new google.maps.LatLng(2.8, -187.3),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  };
+
+  map = new google.maps.Map(document.getElementById('map_canvas'),
+      mapOptions);
+
+  // Create a script tag and set the USGS URL as the source.
+  // Append this tag to the document's <head>.
+/**/  var script = document.createElement('script');
+  script.src = 'dream_loc.php';
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+window.eqfeed_callback = function(results) {
+  for (var i = 0; i < results.features.length; i++) {
+    var earthquake = results.features[i];
+    var coords = earthquake.coordinates;
+    var latLng = new google.maps.LatLng(coords[0],coords[1]);
+    var marker = new google.maps.Marker({
+      position: latLng,
+      map: map,
+      icon: getCircle(earthquake.mag)
+    });
+  }
+}
+
+function getCircle(magnitude) {
+  return {
+    path: google.maps.SymbolPath.CIRCLE,
+    fillColor: 'red',
+    fillOpacity: .4,
+    scale: Math.pow(3, magnitude) / Math.PI,
+    strokeColor: 'white',
+    strokeWeight: .5
+  };
+}
+  </script>
+  </head>
+  <body onLoad="initialize()">
+	<div id="map_canvas"></div>
+</body>
+</html>
