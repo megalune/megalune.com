@@ -1,2 +1,0 @@
-# ziv
-app wireframe
